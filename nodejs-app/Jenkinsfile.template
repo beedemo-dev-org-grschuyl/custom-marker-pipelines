@@ -9,7 +9,7 @@ pipeline {
     preserveStashes(buildCount: 2)
   }
   stages {
-        stage('Tests') {
+    stage('Tests') {
       parallel {
         stage('Web Tests') {
           agent {
